@@ -1,13 +1,10 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
+  min-width: 800px;
   width: 1100px;
-  margin: 0 auto;
+  margin: auto;
+  background-color: #ffffff;
   font-family: Raleway, sans-serif;
+  font-weight: 400;
 }
 
 h1,
@@ -19,20 +16,52 @@ h6,
 p,
 ul,
 ol,
-li,
 blockquote {
   margin: 0;
   padding: 0;
 }
 
-a {
-  color: inherit;
+.header {
 }
 
-img {
-  width: 100%;
+.cover {
+  width: 1100px;
+  height: 757px;
 }
 
-button {
-  font: inherit;
+.description {
+  width: 1000;
+  height: 51px;
+}
+
+.button_cover {
+  width: 256px;
+}
+
+.lots {
+  height: 723px;
+}
+
+.about {
+  height: 595px;
+}
+
+.about_logo {
+  width: 240px;
+  height: 240px;
+}
+
+.about_content {
+  width: 693px;
+  height: 449px;
+}
+
+.footer {
+  width: 1100px;
+  height: 180px;
+}
+
+.footer_social-media {
+  width: 240px;
+  height: 48px;
 }
