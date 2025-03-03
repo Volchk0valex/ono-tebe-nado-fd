@@ -18,6 +18,10 @@
   text-underline-offset: 4px;
 }
 
+.home {
+  list-style-type: none;
+}
+
 .img_logo {
   padding: 1px 15px 0 35px;
 }
