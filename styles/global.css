@@ -1,7 +1,7 @@
 body {
-  overflow-x: hidden;
-  min-width: 320px;
+  min-width: 380px;
   width: 1100px;
+  max-width: 2000px;
   margin: 0;
   background-color: #ffffff;
   font-family: Raleway, sans-serif;
