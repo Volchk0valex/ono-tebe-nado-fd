@@ -27,7 +27,6 @@ blockquote {
 }
 
 .description {
-  max-width: 1000px;
   height: 51px;
 }
 
@@ -41,7 +40,6 @@ blockquote {
 }
 
 .footer {
-  max-width: 1100px;
   height: 180px;
 }
 
