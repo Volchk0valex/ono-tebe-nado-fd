@@ -235,6 +235,7 @@
 }
 
 .about_logo {
+  margin: 35px 0 0 47px;
   display: grid;
   justify-items: center;
   background-color: #000000;
@@ -276,6 +277,7 @@
 }
 
 .footer {
+  display: block;
   padding-top: 181px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
