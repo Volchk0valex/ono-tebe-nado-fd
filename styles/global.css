@@ -1,8 +1,9 @@
 body {
-  min-width: 380px;
   width: 1100px;
+  min-width: 600px;
   max-width: 2000px;
   margin: 0;
+  padding: 0;
   background-color: #ffffff;
   font-family: Raleway, sans-serif;
   font-weight: 400;
@@ -33,13 +34,13 @@ blockquote {
 
 
 .cover {
-  width: 1100px;
+  max-width: 1100px;
   height: 757px;
   min-width: 380px;
 }
 
 .description {
-  width: 1000px;
+  max-width: 1000px;
   height: 51px;
   min-width: 380px;
 }
@@ -64,13 +65,13 @@ blockquote {
 }
 
 .about_content {
-  width: 693px;
+  max-width: 693px;
   height: 449px;
   min-width: 380px;
 }
 
 .footer {
-  width: 1100px;
+  max-width: 1100px;
   height: 180px;
   min-width: 380px;
 }
