@@ -8,7 +8,7 @@
 .header_menu {
   padding: 0px 6px 4px 3px;
   display: flex;
-  gap: 32px;
+  gap: 30px;
   list-style: circle;
   font-family: "Raleway", serif;
   font-weight: 400;
@@ -19,15 +19,21 @@
 }
 
 .home {
-  list-style-type: none;
+  list-style: none;
+}
+
+.header__menu-item_type_no-bullit {
+  text-decoration: none;
+  color: #000000;
 }
 
 .img_logo {
   padding: 1px 15px 0 35px;
 }
 
-.looks_lots {
+.header__menu-link {
   color: #000000;
+  padding-left: 3px;
 }
 
 .about_auction {
@@ -35,7 +41,7 @@
 }
 
 .address {
-  justify-self: end;
+  color: #000000;
   font-family: "Raleway", serif;
   font-weight: 400;
   font-size: 18px;
@@ -44,18 +50,16 @@
   text-underline-offset: 4px;
 }
 
-.telephone {
-  color: #000000;
-}
-
-.email {
-  color: #000000;
+.header__address {
+  justify-self: end;
 }
 
 .cover {
+  background-repeat: no-repeat;
+  background-position: center;
   background-image: url(../images/lotus-flower.png);
   position: relative;
-  z-index: -2;
+  z-index: 0;
 }
 
 .cover::before {
@@ -77,15 +81,15 @@
   font-weight: 700;
   font-size: 100px;
   line-height: 115px;
-  letter-spacing: 30%;
+  letter-spacing: 30px;
 }
 
-.tebe {
+.aligned-text_center {
   padding: 20px 0 0 0;
   text-align: center;
 }
 
-.nado {
+.aligned-text_right {
   padding: 20px 0 0 0;
   text-align: right;
 }
@@ -103,7 +107,7 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
-  word-spacing: 84%;
+  word-spacing: 19px;
   text-transform: uppercase;
 }
 
@@ -144,7 +148,7 @@
 .lot_content {
   display: flex;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
   flex-direction: column;
   position: relative;
 }
@@ -157,23 +161,33 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: -1;
+  z-index: 0;
 }
 
-.lots_content_one {
+article {
+  position:relative;
+  padding: 0 40px 50px 40px;
+  color: #ffffff;
+  font-family: "Raleway", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.card_type_film {
   background-image: url(../images/lot1.png);
-  z-index: -2;
+  z-index: 0;
 }
 
-.lots_content_two {
+.card_type_book {
   background-image: url(../images/lot2.png);
   background-size: 100% 100%;
-  z-index: -2;
+  z-index: 0;
 }
 
-.lots_content_three {
+.card_type_picture {
   background-image: url(../images/lot3.png);
-  z-index: -2;
+  z-index: 0;
 }
 
 .card-link {
@@ -187,32 +201,18 @@
   text-transform: uppercase;
   text-underline-offset: 3px;
   align-items: flex-end;
+  z-index: 1;
 }
 
-.lots_text {
-  height: 100%;
-  text-decoration: none;
-}
-
-.text_additional {
-  padding: 0 40px 40px 40px;
-  position: relative;
-  font-family: "Raleway", serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: #ffffff;
-}
-
-.text_additional_one {
+.text_type_film {
   padding: 82px 40px 0 40px;
 }
 
-.text_additional_two {
+.text_type_book {
   padding-bottom: 48px;
 }
 
-.text_additional_three {
+.text_type_picture {
   padding-bottom: 48px;
 }
 
@@ -231,7 +231,9 @@
 .about {
   padding: 119px 24px 0 24px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 334px 718px;
+  max-width: 1052px;
+  min-height: 595px;
 }
 
 .about_logo {
@@ -249,7 +251,8 @@
 }
 
 .about_content {
-  padding: 137px 0 0 72px;
+  padding-top: 137px;
+  padding-left: 25px;
 }
 
 .title_about-content {
@@ -260,16 +263,15 @@
   text-transform: uppercase;
 }
 
-.about_text-one {
-  padding: 100px 10px 0 0;
+.about_text-top {
+  padding: 100px 30px 24px 0;
   font-family: "Raleway", serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
 }
 
-.about_text-two {
-  padding: 5px 0 0 0;
+.about_text-bottom {
   font-family: "Raleway", serif;
   font-weight: 400;
   font-size: 20px;
@@ -277,18 +279,14 @@
 }
 
 .footer {
-  padding-top: 181px;
+  padding-top: 179px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.address_footer {
-  padding-left: 48px;
-  font-family: "Raleway", serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24.3px;
-  text-underline-offset: 4px;
+.footer_adress {
+  justify-self: baseline;
+  padding-left: 50px;
 }
 
 .footer_menu {
@@ -299,6 +297,15 @@
   font-size: 18px;
   line-height: 21.13px;
   text-underline-offset: 4px;
+}
+
+.footer__menu-link_active {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer__menu-link {
+  color: #000000;
 }
 
 .footer_social-media {
