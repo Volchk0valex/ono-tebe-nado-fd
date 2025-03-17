@@ -150,15 +150,7 @@
   z-index: 0;
 }
 
-.lot_content {
-  width: 334px;
-  min-height: 596px;
-  position: relative;
-}
-
 .card {
-  height: 100%;
-  color: #ffffff;
   text-decoration: none;
 }
 
@@ -167,10 +159,13 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 334px;
+  min-height: 596px;
   position: relative;
+  color: #ffffff;
 }
 
-.lot_content::before {
+.overley::before {
   content: "";
   position: absolute;
   top: 0;
@@ -187,6 +182,7 @@ article {
   font-size: 20px;
   line-height: 120%;
   justify-content: end;
+  z-index: 1;
 }
 
 .card_type_film {
@@ -195,7 +191,7 @@ article {
 
 .card_type_book {
   background-image: url(../images/lot2.png);
-  background-size: 100% 100%;
+  background-size: 100%;
 }
 
 .card_type_picture {
@@ -212,6 +208,7 @@ article {
   text-decoration: underline;
   text-underline-offset: 3px;
   align-items: end;
+  z-index: 1;
 }
 
 .lots_more {
